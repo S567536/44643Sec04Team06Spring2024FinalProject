@@ -2,6 +2,6 @@
 
  Roles and responsibilities 
 ---
-Hema Pradeepthi oversees user interface design, layout, animation, and responsive design for front-end development.
-Rishik Reddy Endurthy: In charge of back-end development, which involves data security, authentication, programming, and API implementation. 
+Hema Pradeepthi oversees user interface design, layout, animation, and responsive design for front-end development. br
+Rishik Reddy Endurthy: In charge of back-end development, which involves data security, authentication, programming, and API implementation. br
 Manikanta Nelluri oversees database design, CRUD operation implementation, documentation, connectivity, error correction, and testing.                   
