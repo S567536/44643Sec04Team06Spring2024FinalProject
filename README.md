@@ -11,5 +11,17 @@ Manikanta Nelluri oversees database design, CRUD operation implementation, docum
 ![pic 1](https://github.com/S567536/44643Sec04Team06Spring2024FinalProject/assets/143028074/5ffe366c-7947-4a4e-9b2e-7bf7422e0bef)
 ![pic 2](https://github.com/S567536/44643Sec04Team06Spring2024FinalProject/assets/143028074/1e4db793-326b-4f8e-9dc7-2fba4ada544d)
 ![pic 3](https://github.com/S567536/44643Sec04Team06Spring2024FinalProject/assets/143028074/ef87c7ae-4553-4e88-a142-49810ef97e92)
+Navigation among Screens:
+This app is used to play quizzes and create one. 
+1.	Login page: When the user clicks on login button, it will take user to the login page. If he/she’s an existing user, they can login or else they can register by clicking the signup button. It will take to the page to create an account.
+
+2.	Home Page: In Home Page, we will have search bar, recent quizzes played along with the quiz topics. When you click the see all button, it will redirect to the topics page. Here we can scroll horizontally for the next topics.
+
+3.	Create Quiz Page: In this page we can name the topic to create quiz and select the level from the dropdown (easy, medium, hard) and click on the create button. It will redirect to a page to create question and put the options. Then we can use the buttons save to save the question, Next to create next question and reset to clear the question.
+
+4.	Leaderboard Page: In this page we can see the leaderboard results and ranks, on clicking weekly button, we can see weekly ranks and by clicking all time, we can see all time ranks.
+
+5.	Profile Page: Here we will have a profile photo along with name and we have buttons for settings, notifications, history of quizzes that are recently played and created.
+
 
 
