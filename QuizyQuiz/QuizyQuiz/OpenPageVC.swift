@@ -9,7 +9,7 @@ import UIKit
 import Lottie
 import AnimatedGradientView
 
-class ViewController: UIViewController {
+class OpenPageVC: UIViewController {
 
     @IBOutlet weak var LaunchLAV: LottieAnimationView!{
         didSet{
