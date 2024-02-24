@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SignUpVC: UIViewController {
 
@@ -15,7 +16,10 @@ class SignUpVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func SignUpBTN(_ sender: UIButton) {
+        AudioServicesPlaySystemSound(1152)
+    }
+    
     /*
     // MARK: - Navigation
 

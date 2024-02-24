@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class LoginVC: UIViewController {
 
@@ -15,7 +16,10 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func LoginBTN(_ sender: UIButton) {
+        AudioServicesPlaySystemSound(1001)
+    }
+    
     /*
     // MARK: - Navigation
 

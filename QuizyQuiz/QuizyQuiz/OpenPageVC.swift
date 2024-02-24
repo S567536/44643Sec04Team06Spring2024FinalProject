@@ -8,6 +8,7 @@
 import UIKit
 import Lottie
 import AnimatedGradientView
+import AVFoundation
 
 class OpenPageVC: UIViewController {
 
@@ -33,6 +34,22 @@ class OpenPageVC: UIViewController {
         applyGradientBackground()
         // Do any additional setup after loading the view.
     }
+    
+   
+    @IBAction func Login(_ sender: UIButton) {
+        AudioServicesPlaySystemSound(1001)
+        
+    }
+    
+    
+    
+    @IBAction func SignUp(_ sender: UIButton) {
+        AudioServicesPlaySystemSound(1152)
+    }
+    
+    
+    
+    
     private func applyGradientBackground(){
             let gradientType: CAGradientLayerType = .axial
             let direction: AnimatedGradientViewDirection = .down
