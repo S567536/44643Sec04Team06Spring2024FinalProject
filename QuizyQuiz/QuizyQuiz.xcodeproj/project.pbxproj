@@ -111,8 +111,7 @@
 				E26AC3E02B86C0A700BB5A7D /* AppDelegate.swift */,
 				E26AC3E22B86C0A700BB5A7D /* SceneDelegate.swift */,
 				E26AC3E42B86C0A700BB5A7D /* OpenPageVC.swift */,
-				E27831AC2B895FA400819CB4 /* SignUpVC.swift */,
-				E27831AA2B895F8A00819CB4 /* LoginVC.swift */,
+				E27831AE2B89933700819CB4 /* Login */,
 				E26AC3E62B86C0A700BB5A7D /* Main.storyboard */,
 				E26AC3E92B86C0A800BB5A7D /* Assets.xcassets */,
 				E26AC3EB2B86C0A800BB5A7D /* LaunchScreen.storyboard */,
@@ -136,6 +135,15 @@
 				E26AC4032B86C0A800BB5A7D /* QuizyQuizUITestsLaunchTests.swift */,
 			);
 			path = QuizyQuizUITests;
+			sourceTree = "<group>";
+		};
+		E27831AE2B89933700819CB4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E27831AA2B895F8A00819CB4 /* LoginVC.swift */,
+				E27831AC2B895FA400819CB4 /* SignUpVC.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

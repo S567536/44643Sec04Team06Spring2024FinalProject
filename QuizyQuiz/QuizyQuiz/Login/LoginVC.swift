@@ -1,5 +1,5 @@
 //
-//  SignUpVC.swift
+//  LoginVC.swift
 //  QuizyQuiz
 //
 //  Created by Rishik Reddy Endurthy on 2/23/24.
@@ -7,18 +7,20 @@
 
 import UIKit
 import AVFoundation
+import AnimatedGradientView
 
-class SignUpVC: UIViewController {
+class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func SignUpBTN(_ sender: UIButton) {
-        AudioServicesPlaySystemSound(1152)
+    @IBAction func LoginBTN(_ sender: UIButton) {
+        AudioServicesPlaySystemSound(1001)
     }
+    
     
     /*
     // MARK: - Navigation
