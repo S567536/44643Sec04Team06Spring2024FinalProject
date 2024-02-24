@@ -53,9 +53,9 @@
 		E26AC3FD2B86C0A800BB5A7D /* QuizyQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizyQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26AC4012B86C0A800BB5A7D /* QuizyQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizyQuizUITests.swift; sourceTree = "<group>"; };
 		E26AC4032B86C0A800BB5A7D /* QuizyQuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizyQuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E27831A72B893B0F00819CB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E27831AA2B895F8A00819CB4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E27831AC2B895FA400819CB4 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		E27831B22B899B1800819CB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,7 +330,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E26AC3E72B86C0A700BB5A7D /* Base */,
-				E27831A72B893B0F00819CB4 /* en */,
+				E27831B22B899B1800819CB4 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

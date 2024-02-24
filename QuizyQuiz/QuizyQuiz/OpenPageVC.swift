@@ -41,8 +41,8 @@ class OpenPageVC: UIViewController {
     @IBAction func Login(_ sender: UIButton) {
         AudioServicesPlaySystemSound(1001)
         
-        let storyBoard = self.storyboard?.instantiateViewController(identifier: "LoginVC") as! LoginVC
-        self.navigationController?.pushViewController(storyBoard, animated: true)
+//        let storyBoard = self.storyboard?.instantiateViewController(identifier: "LoginVC") as! LoginVC
+//        self.navigationController?.pushViewController(storyBoard, animated: true)
         
     }
     
@@ -51,8 +51,8 @@ class OpenPageVC: UIViewController {
     @IBAction func SignUp(_ sender: UIButton) {
         AudioServicesPlaySystemSound(1152)
         
-        let storyBoard = self.storyboard?.instantiateViewController(identifier: "SignUpVC") as! SignUpVC
-        self.navigationController?.pushViewController(storyBoard, animated: true)
+//        let storyBoard = self.storyboard?.instantiateViewController(identifier: "SignUpVC") as! SignUpVC
+//        self.navigationController?.pushViewController(storyBoard, animated: true)
     }
     
     
