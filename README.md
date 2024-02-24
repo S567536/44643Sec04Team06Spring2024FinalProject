@@ -23,5 +23,11 @@ This app is used to play quizzes and create one.
 
 5.	Profile Page: Here we will have a profile photo along with name and we have buttons for settings, notifications, history of quizzes that are recently played and created.
 
+---
+Sprint - 3
+---
+We added a lottie view and then open is visible which allows user to ask to login or sign up for an account which redirect them for login page if they click on login button otherwise to signup page if they click on signup
+button and added gradient view for all the pages and audio for the buttons
+
 
 
