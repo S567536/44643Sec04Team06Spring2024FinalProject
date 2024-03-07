@@ -24,6 +24,18 @@ class LoginVC: UIViewController {
     
     @IBAction func LoginBTN(_ sender: UIButton) {
         AudioServicesPlaySystemSound(1001)
+        guard let email = emailTextField.text else{return}
+                guard let password = passwordTextField.text else{return}
+                Auth.auth().signIn(withEmail: email, password: password){
+                    firebaseResult , error in
+                    if error != nil{
+                        print("error")
+                    }
+                    else{
+                        //Go to home Screen
+                        self.performSegue(withIdentifier: "goToNext", sender: self)
+                    }
+                }
         
     }
     
