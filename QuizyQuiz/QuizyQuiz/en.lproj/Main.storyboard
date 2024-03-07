@@ -87,12 +87,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hjt-at-FRD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="03E-5b-uSO"/>
-                            <constraint firstItem="hjt-at-FRD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="At6-3y-BEL"/>
+                            <constraint firstItem="hjt-at-FRD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B5b-Wt-eQt"/>
                             <constraint firstAttribute="trailing" secondItem="m1y-Wi-DTH" secondAttribute="trailing" constant="20" id="Qv9-hy-jHV"/>
-                            <constraint firstItem="hjt-at-FRD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bXb-NW-RCC"/>
-                            <constraint firstItem="hjt-at-FRD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fbX-NQ-he9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hjt-at-FRD" secondAttribute="trailing" id="bUf-ah-vbv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hjt-at-FRD" secondAttribute="bottom" id="h8E-cD-SAJ"/>
                             <constraint firstItem="m1y-Wi-DTH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iFZ-mk-Itg"/>
+                            <constraint firstItem="hjt-at-FRD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vIQ-f8-CYc"/>
                             <constraint firstItem="m1y-Wi-DTH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19.999999999999972" id="zvi-xP-qQQ"/>
                         </constraints>
                     </view>

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2C675C2A2B871268006D93C7 /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 2C675C292B871268006D93C7 /* AnimatedGradientView */; };
+		E24BCCB22B93DEEC007A3AC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E24BCCB12B93DEEC007A3AC1 /* GoogleService-Info.plist */; };
+		E24BCCB52B93E036007A3AC1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E24BCCB42B93E036007A3AC1 /* FirebaseAuth */; };
 		E26AC3E12B86C0A700BB5A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AC3E02B86C0A700BB5A7D /* AppDelegate.swift */; };
 		E26AC3E32B86C0A700BB5A7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AC3E22B86C0A700BB5A7D /* SceneDelegate.swift */; };
 		E26AC3E52B86C0A700BB5A7D /* OpenPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AC3E42B86C0A700BB5A7D /* OpenPageVC.swift */; };
@@ -20,6 +22,7 @@
 		E26AC4122B86C22200BB5A7D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E26AC4112B86C22200BB5A7D /* Lottie */; };
 		E27831AB2B895F8A00819CB4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27831AA2B895F8A00819CB4 /* LoginVC.swift */; };
 		E27831AD2B895FA400819CB4 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27831AC2B895FA400819CB4 /* SignUpVC.swift */; };
+		E2F29DFF2B8C33F100DAC806 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F29DFE2B8C33F100DAC806 /* HomePageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E24BCCB12B93DEEC007A3AC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E26AC3DD2B86C0A700BB5A7D /* QuizyQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizyQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26AC3E02B86C0A700BB5A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26AC3E22B86C0A700BB5A7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +59,8 @@
 		E26AC4032B86C0A800BB5A7D /* QuizyQuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizyQuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E27831AA2B895F8A00819CB4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E27831AC2B895FA400819CB4 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		E27831B22B899B1800819CB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2F29DFD2B8BFA6A00DAC806 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2F29DFE2B8C33F100DAC806 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C675C2A2B871268006D93C7 /* AnimatedGradientView in Frameworks */,
+				E24BCCB52B93E036007A3AC1 /* FirebaseAuth in Frameworks */,
 				E26AC4122B86C22200BB5A7D /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,9 +119,11 @@
 				E26AC3E42B86C0A700BB5A7D /* OpenPageVC.swift */,
 				E27831AE2B89933700819CB4 /* Login */,
 				E26AC3E62B86C0A700BB5A7D /* Main.storyboard */,
+				E2F29DFE2B8C33F100DAC806 /* HomePageVC.swift */,
 				E26AC3E92B86C0A800BB5A7D /* Assets.xcassets */,
 				E26AC3EB2B86C0A800BB5A7D /* LaunchScreen.storyboard */,
 				E26AC3EE2B86C0A800BB5A7D /* Info.plist */,
+				E24BCCB12B93DEEC007A3AC1 /* GoogleService-Info.plist */,
 			);
 			path = QuizyQuiz;
 			sourceTree = "<group>";
@@ -165,6 +173,7 @@
 			packageProductDependencies = (
 				E26AC4112B86C22200BB5A7D /* Lottie */,
 				2C675C292B871268006D93C7 /* AnimatedGradientView */,
+				E24BCCB42B93E036007A3AC1 /* FirebaseAuth */,
 			);
 			productName = QuizyQuiz;
 			productReference = E26AC3DD2B86C0A700BB5A7D /* QuizyQuiz.app */;
@@ -241,6 +250,7 @@
 			packageReferences = (
 				E26AC4102B86C22200BB5A7D /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				2C675C282B871268006D93C7 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
+				E24BCCB32B93DFA4007A3AC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = E26AC3DE2B86C0A700BB5A7D /* Products */;
 			projectDirPath = "";
@@ -259,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E26AC3ED2B86C0A800BB5A7D /* LaunchScreen.storyboard in Resources */,
+				E24BCCB22B93DEEC007A3AC1 /* GoogleService-Info.plist in Resources */,
 				E26AC3EA2B86C0A800BB5A7D /* Assets.xcassets in Resources */,
 				E26AC3E82B86C0A700BB5A7D /* Main.storyboard in Resources */,
 			);
@@ -287,6 +298,7 @@
 			files = (
 				E26AC3E52B86C0A700BB5A7D /* OpenPageVC.swift in Sources */,
 				E26AC3E12B86C0A700BB5A7D /* AppDelegate.swift in Sources */,
+				E2F29DFF2B8C33F100DAC806 /* HomePageVC.swift in Sources */,
 				E27831AB2B895F8A00819CB4 /* LoginVC.swift in Sources */,
 				E27831AD2B895FA400819CB4 /* SignUpVC.swift in Sources */,
 				E26AC3E32B86C0A700BB5A7D /* SceneDelegate.swift in Sources */,
@@ -330,7 +342,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E26AC3E72B86C0A700BB5A7D /* Base */,
-				E27831B22B899B1800819CB4 /* en */,
+				E2F29DFD2B8BFA6A00DAC806 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -641,6 +653,14 @@
 				minimumVersion = 3.1.1;
 			};
 		};
+		E24BCCB32B93DFA4007A3AC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
 		E26AC4102B86C22200BB5A7D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -656,6 +676,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2C675C282B871268006D93C7 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */;
 			productName = AnimatedGradientView;
+		};
+		E24BCCB42B93E036007A3AC1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E24BCCB32B93DFA4007A3AC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 		E26AC4112B86C22200BB5A7D /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;

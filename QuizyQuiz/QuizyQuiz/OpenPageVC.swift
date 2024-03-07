@@ -51,7 +51,7 @@ class OpenPageVC: UIViewController {
     @IBAction func SignUp(_ sender: UIButton) {
         AudioServicesPlaySystemSound(1152)
         
-//        let storyBoard = self.storyboard?.instantiateViewController(identifier: "SignUpVC") as! SignUpVC
+//       let storyBoard = self.storyboard?.instantiateViewController(identifier: "SignUpVC") as! SignUpVC
 //        self.navigationController?.pushViewController(storyBoard, animated: true)
     }
     

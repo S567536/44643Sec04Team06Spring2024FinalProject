@@ -8,9 +8,21 @@
 import UIKit
 import AVFoundation
 import AnimatedGradientView
+import Firebase
 
 class SignUpVC: UIViewController {
 
+ 
+    @IBOutlet weak var emailTF: UITextField!
+    
+    
+    @IBOutlet weak var fullNameTF: UITextField!
+    
+    
+    @IBOutlet weak var password: UITextField!
+    
+    
+    @IBOutlet weak var confirmTF: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         applyGradientBackground()
@@ -19,6 +31,7 @@ class SignUpVC: UIViewController {
     
     @IBAction func SignUpBTN(_ sender: UIButton) {
         AudioServicesPlaySystemSound(1152)
+
     }
     
     private func applyGradientBackground(){
