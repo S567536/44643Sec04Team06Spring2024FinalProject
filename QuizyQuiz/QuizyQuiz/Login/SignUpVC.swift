@@ -41,7 +41,6 @@ class SignUpVC: UIViewController {
                 self.view.insertSubview(animatedGradient, at:0)
             }
     
-    
     @IBAction func SignUpBTN(_ sender: UIButton) {
         AudioServicesPlaySystemSound(1152)
         guard let email = emailTF.text, !email.isEmpty else {return}
