@@ -235,7 +235,7 @@
         <!--Home page-->
         <scene sceneID="Wwp-VH-b9T">
             <objects>
-                <viewController id="CC8-kV-1JI" userLabel="Home page" sceneMemberID="viewController">
+                <viewController id="CC8-kV-1JI" userLabel="Home page" customClass="HomePageVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dY9-Yx-hSd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,7 +307,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ayj-Fw-uK1" userLabel="BigContainerSV">
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ayj-Fw-uK1" userLabel="BigContainerSV">
                                 <rect key="frame" x="20" y="123" width="353" height="793"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="r7f-7X-GOU">
@@ -359,17 +359,16 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="TvD-ie-e8q" firstAttribute="height" secondItem="ayj-Fw-uK1" secondAttribute="height" multiplier="0.2" id="75q-hc-nof"/>
-                                    <constraint firstAttribute="height" constant="700" id="JIb-wA-PXj"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vMc-fE-VLg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="ayj-Fw-uK1" secondAttribute="bottom" constant="-98" id="1Iz-o9-UL6"/>
                             <constraint firstItem="vMc-fE-VLg" firstAttribute="trailing" secondItem="ayj-Fw-uK1" secondAttribute="trailing" constant="20" id="6Ry-as-0AV"/>
-                            <constraint firstItem="ayj-Fw-uK1" firstAttribute="top" secondItem="vMc-fE-VLg" secondAttribute="top" constant="20" id="NTX-j4-4NG"/>
                             <constraint firstItem="ayj-Fw-uK1" firstAttribute="leading" secondItem="eMY-ji-Coz" secondAttribute="leading" constant="20" id="fkQ-gf-ucw"/>
-                            <constraint firstItem="vMc-fE-VLg" firstAttribute="bottom" secondItem="ayj-Fw-uK1" secondAttribute="bottom" constant="20" id="jaz-0b-aao"/>
+                            <constraint firstItem="ayj-Fw-uK1" firstAttribute="top" secondItem="vMc-fE-VLg" secondAttribute="top" constant="20" id="gz3-XW-xnC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Q8N-6H-Yph"/>
@@ -427,7 +426,7 @@
         <!--Home page-->
         <scene sceneID="fsd-NJ-XzU">
             <objects>
-                <viewController id="9Pr-V3-mCE" userLabel="Home page" sceneMemberID="viewController">
+                <viewController id="9Pr-V3-mCE" userLabel="Home page" customClass="CreateQuizVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="exX-NB-s0g">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -513,7 +512,7 @@
         <!--Item-->
         <scene sceneID="5ek-Pw-gjC">
             <objects>
-                <viewController id="hOC-me-O89" sceneMemberID="viewController">
+                <viewController id="hOC-me-O89" customClass="LeaderBoardVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="od7-81-f93">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -529,7 +528,7 @@
         <!--Item-->
         <scene sceneID="UBA-Ng-HVI">
             <objects>
-                <viewController id="cLe-go-A0D" sceneMemberID="viewController">
+                <viewController id="cLe-go-A0D" customClass="ProfileVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pmY-g4-bi5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

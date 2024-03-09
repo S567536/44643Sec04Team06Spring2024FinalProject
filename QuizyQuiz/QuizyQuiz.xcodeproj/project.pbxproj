@@ -10,6 +10,9 @@
 		2C675C2A2B871268006D93C7 /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 2C675C292B871268006D93C7 /* AnimatedGradientView */; };
 		E24BCCB22B93DEEC007A3AC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E24BCCB12B93DEEC007A3AC1 /* GoogleService-Info.plist */; };
 		E24BCCB52B93E036007A3AC1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E24BCCB42B93E036007A3AC1 /* FirebaseAuth */; };
+		E24BCCC42B9C28C4007A3AC1 /* CreateQuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BCCC32B9C28C4007A3AC1 /* CreateQuizVC.swift */; };
+		E24BCCC62B9C28FF007A3AC1 /* LeaderBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BCCC52B9C28FF007A3AC1 /* LeaderBoardVC.swift */; };
+		E24BCCC82B9C290D007A3AC1 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BCCC72B9C290D007A3AC1 /* ProfileVC.swift */; };
 		E26AC3E12B86C0A700BB5A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AC3E02B86C0A700BB5A7D /* AppDelegate.swift */; };
 		E26AC3E32B86C0A700BB5A7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AC3E22B86C0A700BB5A7D /* SceneDelegate.swift */; };
 		E26AC3E52B86C0A700BB5A7D /* OpenPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AC3E42B86C0A700BB5A7D /* OpenPageVC.swift */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		E24BCCB12B93DEEC007A3AC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E24BCCC32B9C28C4007A3AC1 /* CreateQuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizVC.swift; sourceTree = "<group>"; };
+		E24BCCC52B9C28FF007A3AC1 /* LeaderBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardVC.swift; sourceTree = "<group>"; };
+		E24BCCC72B9C290D007A3AC1 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		E26AC3DD2B86C0A700BB5A7D /* QuizyQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizyQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26AC3E02B86C0A700BB5A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26AC3E22B86C0A700BB5A7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +97,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E24BCCC22B9C2883007A3AC1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E2F29DFE2B8C33F100DAC806 /* HomePageVC.swift */,
+				E24BCCC32B9C28C4007A3AC1 /* CreateQuizVC.swift */,
+				E24BCCC52B9C28FF007A3AC1 /* LeaderBoardVC.swift */,
+				E24BCCC72B9C290D007A3AC1 /* ProfileVC.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		E26AC3D42B86C0A700BB5A7D = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +136,7 @@
 				E26AC3E42B86C0A700BB5A7D /* OpenPageVC.swift */,
 				E27831AE2B89933700819CB4 /* Login */,
 				E26AC3E62B86C0A700BB5A7D /* Main.storyboard */,
-				E2F29DFE2B8C33F100DAC806 /* HomePageVC.swift */,
+				E24BCCC22B9C2883007A3AC1 /* App */,
 				E26AC3E92B86C0A800BB5A7D /* Assets.xcassets */,
 				E26AC3EB2B86C0A800BB5A7D /* LaunchScreen.storyboard */,
 				E26AC3EE2B86C0A800BB5A7D /* Info.plist */,
@@ -299,8 +316,11 @@
 				E26AC3E52B86C0A700BB5A7D /* OpenPageVC.swift in Sources */,
 				E26AC3E12B86C0A700BB5A7D /* AppDelegate.swift in Sources */,
 				E2F29DFF2B8C33F100DAC806 /* HomePageVC.swift in Sources */,
+				E24BCCC82B9C290D007A3AC1 /* ProfileVC.swift in Sources */,
 				E27831AB2B895F8A00819CB4 /* LoginVC.swift in Sources */,
+				E24BCCC62B9C28FF007A3AC1 /* LeaderBoardVC.swift in Sources */,
 				E27831AD2B895FA400819CB4 /* SignUpVC.swift in Sources */,
+				E24BCCC42B9C28C4007A3AC1 /* CreateQuizVC.swift in Sources */,
 				E26AC3E32B86C0A700BB5A7D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
