@@ -16,6 +16,7 @@ class HomePageVC: UIViewController {
         super.viewDidLoad()
         title = "Hello"
         navigationItem.searchController =  searchController
+        applyGradientBackground()
         // Do any additional setup after loading the view.
     }
     private func applyGradientBackground(){
