@@ -6,15 +6,29 @@
 //
 
 import UIKit
+import AnimatedGradientView
 
 class LeaderBoardVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        applyGradientBackground()
 
         // Do any additional setup after loading the view.
     }
     
+    private func applyGradientBackground(){
+                let gradientType: CAGradientLayerType = .axial
+                let direction: AnimatedGradientViewDirection = .down
+                let animatedGradient = AnimatedGradientView(frame: self.view.bounds)
+                animatedGradient.animationValues = [
+                    (colors: ["ffafbd","cc2b5e"],direction,gradientType),
+                    (colors: ["42275a","bdc3c7"],direction,gradientType),
+                    (colors: ["de6262","dd5e89"],direction,gradientType),
+                    (colors: ["06beb6","2193b0"],direction,gradientType),
+                ]
+                self.view.insertSubview(animatedGradient, at:0)
+            }
 
     /*
     // MARK: - Navigation
