@@ -29,5 +29,11 @@ Sprint - 3
 We added a lottie view and then open is visible which allows user to ask to login or sign up for an account which redirect them for login page if they click on login button otherwise to signup page if they click on signup
 button and added gradient view for all the pages and audio for the buttons
 
+---
+Sprint - 4
+---
+We added Firebase for authentication ,navigation bar for the flow of the app and task Bar for the home Screen and added gradient view for the pages 
+
+
 
 
