@@ -46,11 +46,10 @@ class SignUpVC: UIViewController {
     @IBAction func SignUpBTN(_ sender: UIButton) {
         AudioServicesPlaySystemSound(1152)
         guard let email = emailTF.text, !email.isEmpty else {return}
-        guard let passwor = password.text else{return}
+        guard let password = password.text else{return}
         guard let name = fullNameTF.text else {return}
-        guard let confirm = confirmTF.text else {return}
-            if(passwor == confirm){
-                Auth.auth().createUser(withEmail: email, password: passwor){
+        if(password == confirmTF.text){
+                Auth.auth().createUser(withEmail: email, password: password){
                 firebaseResult , error in
                 if let e = error{
                     print("error")
