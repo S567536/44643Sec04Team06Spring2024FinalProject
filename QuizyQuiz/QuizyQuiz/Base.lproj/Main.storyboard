@@ -409,10 +409,10 @@
             </objects>
             <point key="canvasLocation" x="-5.343511450381679" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--ResetpasswordVC-->
         <scene sceneID="ubl-wW-IjK">
             <objects>
-                <viewController id="7mZ-2j-fLv" sceneMemberID="viewController">
+                <viewController id="7mZ-2j-fLv" customClass="ResetpasswordVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uzk-vh-I8d">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -468,11 +468,17 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Send Link"/>
+                                                        <connections>
+                                                            <action selector="SendLink:" destination="7mZ-2j-fLv" eventType="touchUpInside" id="8QA-pu-Jrr"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bz0-jf-0ot">
                                                         <rect key="frame" x="0.0" y="42.333333333333371" width="353" height="34.666666666666657"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Cancel"/>
+                                                        <connections>
+                                                            <action selector="Cancel:" destination="7mZ-2j-fLv" eventType="touchUpInside" id="6UA-Fc-yeG"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -496,6 +502,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ndk-G6-Qs2"/>
+                    <connections>
+                        <outlet property="EmailTF" destination="dld-tI-Q1c" id="29k-lj-bqm"/>
+                        <outlet property="MessageLBL" destination="zMQ-aL-NEI" id="zUG-H7-9zq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyY-jt-2RW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
