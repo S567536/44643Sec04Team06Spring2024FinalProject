@@ -291,7 +291,7 @@
                         <viewLayoutGuide key="safeArea" id="mvM-hT-DOM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="kfk-rX-HbT">
+                    <tabBarItem key="tabBarItem" title="Home" id="kfk-rX-HbT">
                         <imageReference key="image" image="house.fill" catalog="system" variableValue="0.40000000000000008"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="sPy-ud-N7d"/>
@@ -638,7 +638,7 @@
                             <constraint firstItem="cFo-j3-X8H" firstAttribute="trailing" secondItem="36J-1b-Lph" secondAttribute="trailing" constant="20" id="zIV-gp-Ada"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="AlV-Te-9PN">
+                    <tabBarItem key="tabBarItem" title="Create Quiz" id="AlV-Te-9PN">
                         <imageReference key="image" image="square.and.pencil" catalog="system" variableValue="0.40000000000000008"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="IHl-9D-Yyg"/>
@@ -653,10 +653,10 @@
             </objects>
             <point key="canvasLocation" x="4264.8854961832058" y="951.4084507042254"/>
         </scene>
-        <!--View Controller-->
+        <!--MakingQ Uiz-->
         <scene sceneID="QsW-Uk-cUg">
             <objects>
-                <viewController id="ahJ-Y3-71J" sceneMemberID="viewController">
+                <viewController id="ahJ-Y3-71J" customClass="MakingQUiz" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TaB-uz-T94">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -669,23 +669,68 @@
             </objects>
             <point key="canvasLocation" x="4703" y="1685"/>
         </scene>
-        <!--Item-->
+        <!--Leaderboard-->
         <scene sceneID="5ek-Pw-gjC">
             <objects>
                 <viewController id="hOC-me-O89" customClass="LeaderBoardVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="od7-81-f93">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lj-S0-lvr">
+                                <rect key="frame" x="175" y="121" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leaderboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klH-m6-SoD">
+                                <rect key="frame" x="148" y="111" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tle-rf-Uyr">
+                                <rect key="frame" x="128" y="173" width="137" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Weekly"/>
+                                    <segment title="All Time"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="current rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ9-YD-Uh1">
+                                <rect key="frame" x="152" y="465" width="93" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwk-RA-6Gn">
+                                <rect key="frame" x="177" y="545" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kga-UG-qDv">
+                                <rect key="frame" x="178" y="625" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="H5L-g0-yIC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="chart.bar.xaxis" catalog="system" id="rn8-dS-4bo"/>
+                    <tabBarItem key="tabBarItem" title="Leaderboard" image="chart.bar.xaxis" catalog="system" id="rn8-dS-4bo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYR-wB-tml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5266" y="944"/>
+            <point key="canvasLocation" x="5264.8854961832058" y="943.66197183098598"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="UBA-Ng-HVI">
             <objects>
                 <viewController id="cLe-go-A0D" customClass="ProfileVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -695,7 +740,7 @@
                         <viewLayoutGuide key="safeArea" id="dlu-dD-Mie"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="person.crop.circle.fill" catalog="system" id="1oD-AZ-CUv"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle.fill" catalog="system" id="1oD-AZ-CUv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jjl-CO-Xey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
