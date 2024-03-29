@@ -26,6 +26,7 @@
 		E26AC4122B86C22200BB5A7D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E26AC4112B86C22200BB5A7D /* Lottie */; };
 		E27831AB2B895F8A00819CB4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27831AA2B895F8A00819CB4 /* LoginVC.swift */; };
 		E27831AD2B895FA400819CB4 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27831AC2B895FA400819CB4 /* SignUpVC.swift */; };
+		E29DCBF92BB74CD100352E24 /* MakingQUiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29DCBF82BB74CD100352E24 /* MakingQUiz.swift */; };
 		E2F29DFF2B8C33F100DAC806 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F29DFE2B8C33F100DAC806 /* HomePageVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		E26AC4032B86C0A800BB5A7D /* QuizyQuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizyQuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E27831AA2B895F8A00819CB4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E27831AC2B895FA400819CB4 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		E29DCBF82BB74CD100352E24 /* MakingQUiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakingQUiz.swift; sourceTree = "<group>"; };
 		E2F29DFE2B8C33F100DAC806 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 				E26AC3E42B86C0A700BB5A7D /* OpenPageVC.swift */,
 				E27831AE2B89933700819CB4 /* Login */,
 				E26AC3E62B86C0A700BB5A7D /* Main.storyboard */,
+				E29DCBF82BB74CD100352E24 /* MakingQUiz.swift */,
 				47286D952BB511AC0044A0B2 /* ResetpasswordVC.swift */,
 				E24BCCC22B9C2883007A3AC1 /* App */,
 				E26AC3E92B86C0A800BB5A7D /* Assets.xcassets */,
@@ -318,6 +321,7 @@
 				E26AC3E52B86C0A700BB5A7D /* OpenPageVC.swift in Sources */,
 				E26AC3E12B86C0A700BB5A7D /* AppDelegate.swift in Sources */,
 				E2F29DFF2B8C33F100DAC806 /* HomePageVC.swift in Sources */,
+				E29DCBF92BB74CD100352E24 /* MakingQUiz.swift in Sources */,
 				47286D962BB511AC0044A0B2 /* ResetpasswordVC.swift in Sources */,
 				E24BCCC82B9C290D007A3AC1 /* ProfileVC.swift in Sources */,
 				E27831AB2B895F8A00819CB4 /* LoginVC.swift in Sources */,

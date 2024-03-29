@@ -39,6 +39,8 @@ class ResetpasswordVC: UIViewController {
     }
     
     @IBAction func Cancel(_ sender: Any) {
+        
+//        performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
     }
     func resetPassword(email :String) async throws{
             do {
