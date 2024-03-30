@@ -282,6 +282,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="See All"/>
+                                <connections>
+                                    <action selector="seeAllBTN:" destination="CC8-kV-1JI" eventType="touchUpInside" id="KKr-WN-cvy"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zex-7b-2VX">
                                 <rect key="frame" x="54" y="572" width="279" height="79"/>
@@ -295,6 +298,9 @@
                         <imageReference key="image" image="house.fill" catalog="system" variableValue="0.40000000000000008"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="sPy-ud-N7d"/>
+                    <connections>
+                        <segue destination="7rv-9L-Yk7" kind="show" identifier="seeAll" id="wPE-PJ-nD6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCd-Pv-mZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -652,6 +658,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8r-Fg-7mf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4264.8854961832058" y="951.4084507042254"/>
+        </scene>
+        <!--See AllVC-->
+        <scene sceneID="Mlx-DM-dJ3">
+            <objects>
+                <viewController id="7rv-9L-Yk7" customClass="seeAllVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KG4-HX-1VU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DO5-nz-xls"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0SQ-2H-Ffe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRH-rm-7B9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3366" y="1685"/>
         </scene>
         <!--MakingQ Uiz-->
         <scene sceneID="QsW-Uk-cUg">

@@ -33,6 +33,23 @@ class HomePageVC: UIViewController {
             }
     
 
+    
+    @IBAction func seeAllBTN(_ sender: UIButton) {
+        self.performSegue(withIdentifier:"seeAll", sender: sender)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch(segue.identifier){
+        case "seeAll":
+            guard let destVC = segue.destination as? seeAllVC else {return}
+        default:
+            assert(false, "Invalid segue")
+        }
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

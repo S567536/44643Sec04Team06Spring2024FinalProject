@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C675C2A2B871268006D93C7 /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 2C675C292B871268006D93C7 /* AnimatedGradientView */; };
+		2C9BFB652BB7BB4500845FE4 /* seeAllVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BFB642BB7BB4500845FE4 /* seeAllVC.swift */; };
 		47286D962BB511AC0044A0B2 /* ResetpasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47286D952BB511AC0044A0B2 /* ResetpasswordVC.swift */; };
 		E24BCCB22B93DEEC007A3AC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E24BCCB12B93DEEC007A3AC1 /* GoogleService-Info.plist */; };
 		E24BCCB52B93E036007A3AC1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E24BCCB42B93E036007A3AC1 /* FirebaseAuth */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C9BFB642BB7BB4500845FE4 /* seeAllVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seeAllVC.swift; sourceTree = "<group>"; };
 		47286D952BB511AC0044A0B2 /* ResetpasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetpasswordVC.swift; sourceTree = "<group>"; };
 		E24BCCB12B93DEEC007A3AC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E24BCCC32B9C28C4007A3AC1 /* CreateQuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizVC.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				E26AC3E42B86C0A700BB5A7D /* OpenPageVC.swift */,
 				E27831AE2B89933700819CB4 /* Login */,
 				E26AC3E62B86C0A700BB5A7D /* Main.storyboard */,
+				2C9BFB642BB7BB4500845FE4 /* seeAllVC.swift */,
 				E29DCBF82BB74CD100352E24 /* MakingQUiz.swift */,
 				47286D952BB511AC0044A0B2 /* ResetpasswordVC.swift */,
 				E24BCCC22B9C2883007A3AC1 /* App */,
@@ -326,6 +329,7 @@
 				E24BCCC82B9C290D007A3AC1 /* ProfileVC.swift in Sources */,
 				E27831AB2B895F8A00819CB4 /* LoginVC.swift in Sources */,
 				E24BCCC62B9C28FF007A3AC1 /* LeaderBoardVC.swift in Sources */,
+				2C9BFB652BB7BB4500845FE4 /* seeAllVC.swift in Sources */,
 				E27831AD2B895FA400819CB4 /* SignUpVC.swift in Sources */,
 				E24BCCC42B9C28C4007A3AC1 /* CreateQuizVC.swift in Sources */,
 				E26AC3E32B86C0A700BB5A7D /* SceneDelegate.swift in Sources */,
