@@ -15,6 +15,7 @@
 		E24BCCC42B9C28C4007A3AC1 /* CreateQuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BCCC32B9C28C4007A3AC1 /* CreateQuizVC.swift */; };
 		E24BCCC62B9C28FF007A3AC1 /* LeaderBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BCCC52B9C28FF007A3AC1 /* LeaderBoardVC.swift */; };
 		E24BCCC82B9C290D007A3AC1 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BCCC72B9C290D007A3AC1 /* ProfileVC.swift */; };
+		E25594362BB7C78200DFA9B8 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25594352BB7C78200DFA9B8 /* AuthenticationModel.swift */; };
 		E26AC3E12B86C0A700BB5A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AC3E02B86C0A700BB5A7D /* AppDelegate.swift */; };
 		E26AC3E32B86C0A700BB5A7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AC3E22B86C0A700BB5A7D /* SceneDelegate.swift */; };
 		E26AC3E52B86C0A700BB5A7D /* OpenPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AC3E42B86C0A700BB5A7D /* OpenPageVC.swift */; };
@@ -55,6 +56,7 @@
 		E24BCCC32B9C28C4007A3AC1 /* CreateQuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizVC.swift; sourceTree = "<group>"; };
 		E24BCCC52B9C28FF007A3AC1 /* LeaderBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardVC.swift; sourceTree = "<group>"; };
 		E24BCCC72B9C290D007A3AC1 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		E25594352BB7C78200DFA9B8 /* AuthenticationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		E26AC3DD2B86C0A700BB5A7D /* QuizyQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizyQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26AC3E02B86C0A700BB5A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26AC3E22B86C0A700BB5A7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				E24BCCC32B9C28C4007A3AC1 /* CreateQuizVC.swift */,
 				E24BCCC52B9C28FF007A3AC1 /* LeaderBoardVC.swift */,
 				E24BCCC72B9C290D007A3AC1 /* ProfileVC.swift */,
+				E25594352BB7C78200DFA9B8 /* AuthenticationModel.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E26AC3E52B86C0A700BB5A7D /* OpenPageVC.swift in Sources */,
+				E25594362BB7C78200DFA9B8 /* AuthenticationModel.swift in Sources */,
 				E26AC3E12B86C0A700BB5A7D /* AppDelegate.swift in Sources */,
 				E2F29DFF2B8C33F100DAC806 /* HomePageVC.swift in Sources */,
 				E29DCBF92BB74CD100352E24 /* MakingQUiz.swift in Sources */,
