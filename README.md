@@ -34,6 +34,12 @@ Sprint - 4
 ---
 We added Firebase for authentication ,navigation bar for the flow of the app and task Bar for the home Screen and added gradient view for the pages 
 
+---
+Sprint -5
+---
+We added new VC for createDuiz and added perform Segues and started working on leaderboards and added gradient view for the new VC 
+
+
 
 
 
