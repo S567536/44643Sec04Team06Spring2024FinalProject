@@ -48,7 +48,7 @@ func fetchQuizData(completion: @escaping ([QuizQuestion]?, Error?) -> Void) {
     let urlString = "https://quizapi.io/api/v1/questions?apiKey=\(apiKey)"
     
     guard let url = URL(string: urlString) else {
-        completion(nil, NSError(domain: "Invalid URL", code: 0, userInfo: nisl))
+        completion(nil, NSError(domain: "Invalid URL", code: 0, userInfo: nil))
         return
     }
     
