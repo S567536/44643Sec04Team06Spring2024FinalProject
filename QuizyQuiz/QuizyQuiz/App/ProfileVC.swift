@@ -9,14 +9,26 @@ import UIKit
 import FirebaseAuth
 import AnimatedGradientView
 
-class ProfileVC: UIViewController {
+class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "profileCell", for: <#T##IndexPath#>)
+        cell.textLabel?.text = "HELLO"
+        return cell
+    }
+    
+    
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         applyGradientBackground()
-
-        // Do any additional setup after loading the view.
     }
+    
     private func applyGradientBackground(){
                 let gradientType: CAGradientLayerType = .axial
                 let direction: AnimatedGradientViewDirection = .down
@@ -30,11 +42,10 @@ class ProfileVC: UIViewController {
                 self.view.insertSubview(animatedGradient, at:0)
             }
     
+    
     @IBAction func Logout(_ sender: Any) {
         
         ShowAlert()
-        
-        
         
     }
     
@@ -57,16 +68,5 @@ class ProfileVC: UIViewController {
         
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
-    
+
 }
