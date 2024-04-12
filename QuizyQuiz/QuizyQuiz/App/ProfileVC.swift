@@ -11,17 +11,25 @@ import AnimatedGradientView
 
 class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return sec.count
     }
-    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "profileCell", for: <#T##IndexPath#>)
-        cell.textLabel?.text = "HELLO"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "profileCell", for: indexPath)
+        cell.textLabel?.text = sec[indexPath.row]
         return cell
     }
     
     
     @IBOutlet weak var tableView: UITableView!
+    let sec = [
+        "Privacy and Settings",
+        "Notifications",
+        "Quiz History",
+        "Created Quizzes"
+        ]
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
