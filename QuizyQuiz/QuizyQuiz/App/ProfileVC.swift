@@ -24,6 +24,7 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBOutlet weak var tableView: UITableView!
+    
     let sec = [
         "Privacy and Settings",
         "Notifications",

@@ -392,7 +392,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baz-RO-Zti">
-                                            <rect key="frame" x="43" y="53" width="42" height="21"/>
+                                            <rect key="frame" x="-2443" y="53" width="2486" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -408,7 +408,6 @@
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="image" destination="enx-0Q-wsj" id="LN7-MU-dIk"/>
-                                    <outlet property="imgLBL" destination="baz-RO-Zti" id="lsK-Wn-Otq"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -439,10 +438,13 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="QUIZS" id="JfS-QD-3vu"/>
+                    <connections>
+                        <outlet property="collection" destination="enx-0Q-wsj" id="nJD-bS-SAJ"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A60-Ps-wzR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3366" y="1685"/>
+            <point key="canvasLocation" x="3365.6488549618321" y="1684.5070422535211"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="IOI-As-el5">
@@ -994,7 +996,7 @@
         <!--Profile-->
         <scene sceneID="UBA-Ng-HVI">
             <objects>
-                <viewController id="cLe-go-A0D" customClass="ProfileTVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cLe-go-A0D" customClass="ProfileVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="pmY-g4-bi5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1035,7 +1037,7 @@
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="HdC-GQ-Apf" id="U1R-qZ-apd"/>
+                        <outlet property="tableView" destination="HdC-GQ-Apf" id="UJa-jI-O1X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jjl-CO-Xey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
