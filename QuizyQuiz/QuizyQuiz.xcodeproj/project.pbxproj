@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2C675C2A2B871268006D93C7 /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 2C675C292B871268006D93C7 /* AnimatedGradientView */; };
-		2C9BFB652BB7BB4500845FE4 /* seeAllVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BFB642BB7BB4500845FE4 /* seeAllVC.swift */; };
 		47286D962BB511AC0044A0B2 /* ResetpasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47286D952BB511AC0044A0B2 /* ResetpasswordVC.swift */; };
 		E223A8482BC8AC310043014E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223A8472BC8AC310043014E /* Model.swift */; };
+		E223A84A2BCA33080043014E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223A8492BCA33080043014E /* HeaderView.swift */; };
+		E223A84C2BCA33220043014E /* Quiz CEll.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223A84B2BCA33220043014E /* Quiz CEll.swift */; };
+		E223A84F2BCA337A0043014E /* SeeQUiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223A84E2BCA337A0043014E /* SeeQUiz.swift */; };
 		E24BCCB22B93DEEC007A3AC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E24BCCB12B93DEEC007A3AC1 /* GoogleService-Info.plist */; };
 		E24BCCB52B93E036007A3AC1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E24BCCB42B93E036007A3AC1 /* FirebaseAuth */; };
 		E24BCCC42B9C28C4007A3AC1 /* CreateQuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BCCC32B9C28C4007A3AC1 /* CreateQuizVC.swift */; };
@@ -51,9 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C9BFB642BB7BB4500845FE4 /* seeAllVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seeAllVC.swift; sourceTree = "<group>"; };
 		47286D952BB511AC0044A0B2 /* ResetpasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetpasswordVC.swift; sourceTree = "<group>"; };
 		E223A8472BC8AC310043014E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E223A8492BCA33080043014E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E223A84B2BCA33220043014E /* Quiz CEll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quiz CEll.swift"; sourceTree = "<group>"; };
+		E223A84E2BCA337A0043014E /* SeeQUiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeQUiz.swift; sourceTree = "<group>"; };
 		E24BCCB12B93DEEC007A3AC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E24BCCC32B9C28C4007A3AC1 /* CreateQuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuizVC.swift; sourceTree = "<group>"; };
 		E24BCCC52B9C28FF007A3AC1 /* LeaderBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardVC.swift; sourceTree = "<group>"; };
@@ -106,6 +110,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E223A84D2BCA33280043014E /* CollectionContent */ = {
+			isa = PBXGroup;
+			children = (
+				E223A84E2BCA337A0043014E /* SeeQUiz.swift */,
+				E223A8492BCA33080043014E /* HeaderView.swift */,
+				E223A84B2BCA33220043014E /* Quiz CEll.swift */,
+			);
+			path = CollectionContent;
+			sourceTree = "<group>";
+		};
 		E24BCCC22B9C2883007A3AC1 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,7 +161,7 @@
 				E26AC3E42B86C0A700BB5A7D /* OpenPageVC.swift */,
 				E27831AE2B89933700819CB4 /* Login */,
 				E26AC3E62B86C0A700BB5A7D /* Main.storyboard */,
-				2C9BFB642BB7BB4500845FE4 /* seeAllVC.swift */,
+				E223A84D2BCA33280043014E /* CollectionContent */,
 				E29DCBF82BB74CD100352E24 /* MakingQUiz.swift */,
 				47286D952BB511AC0044A0B2 /* ResetpasswordVC.swift */,
 				E24BCCC22B9C2883007A3AC1 /* App */,
@@ -330,6 +344,7 @@
 				E26AC3E52B86C0A700BB5A7D /* OpenPageVC.swift in Sources */,
 				E25594362BB7C78200DFA9B8 /* AuthenticationModel.swift in Sources */,
 				E26AC3E12B86C0A700BB5A7D /* AppDelegate.swift in Sources */,
+				E223A84C2BCA33220043014E /* Quiz CEll.swift in Sources */,
 				E2F29DFF2B8C33F100DAC806 /* HomePageVC.swift in Sources */,
 				E29DCBF92BB74CD100352E24 /* MakingQUiz.swift in Sources */,
 				47286D962BB511AC0044A0B2 /* ResetpasswordVC.swift in Sources */,
@@ -337,9 +352,10 @@
 				E223A8482BC8AC310043014E /* Model.swift in Sources */,
 				E27831AB2B895F8A00819CB4 /* LoginVC.swift in Sources */,
 				E24BCCC62B9C28FF007A3AC1 /* LeaderBoardVC.swift in Sources */,
-				2C9BFB652BB7BB4500845FE4 /* seeAllVC.swift in Sources */,
+				E223A84A2BCA33080043014E /* HeaderView.swift in Sources */,
 				E27831AD2B895FA400819CB4 /* SignUpVC.swift in Sources */,
 				E24BCCC42B9C28C4007A3AC1 /* CreateQuizVC.swift in Sources */,
+				E223A84F2BCA337A0043014E /* SeeQUiz.swift in Sources */,
 				E26AC3E32B86C0A700BB5A7D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
