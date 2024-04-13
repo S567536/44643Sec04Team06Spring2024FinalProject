@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2C675C2A2B871268006D93C7 /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 2C675C292B871268006D93C7 /* AnimatedGradientView */; };
 		47286D962BB511AC0044A0B2 /* ResetpasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47286D952BB511AC0044A0B2 /* ResetpasswordVC.swift */; };
+		475734C12BCA37D700FC0941 /* ProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475734C02BCA37D700FC0941 /* ProfileTVC.swift */; };
+		475734C32BCA381200FC0941 /* ProfileTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475734C22BCA381200FC0941 /* ProfileTVCell.swift */; };
 		E223A8482BC8AC310043014E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223A8472BC8AC310043014E /* Model.swift */; };
 		E223A84A2BCA33080043014E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223A8492BCA33080043014E /* HeaderView.swift */; };
 		E223A84C2BCA33220043014E /* Quiz CEll.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223A84B2BCA33220043014E /* Quiz CEll.swift */; };
@@ -54,6 +56,8 @@
 
 /* Begin PBXFileReference section */
 		47286D952BB511AC0044A0B2 /* ResetpasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetpasswordVC.swift; sourceTree = "<group>"; };
+		475734C02BCA37D700FC0941 /* ProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTVC.swift; sourceTree = "<group>"; };
+		475734C22BCA381200FC0941 /* ProfileTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTVCell.swift; sourceTree = "<group>"; };
 		E223A8472BC8AC310043014E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E223A8492BCA33080043014E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E223A84B2BCA33220043014E /* Quiz CEll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quiz CEll.swift"; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 		E26AC3DF2B86C0A700BB5A7D /* QuizyQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				475734C02BCA37D700FC0941 /* ProfileTVC.swift */,
+				475734C22BCA381200FC0941 /* ProfileTVCell.swift */,
 				E26AC3E02B86C0A700BB5A7D /* AppDelegate.swift */,
 				E26AC3E22B86C0A700BB5A7D /* SceneDelegate.swift */,
 				E26AC3E42B86C0A700BB5A7D /* OpenPageVC.swift */,
@@ -351,6 +357,8 @@
 				E24BCCC82B9C290D007A3AC1 /* ProfileVC.swift in Sources */,
 				E223A8482BC8AC310043014E /* Model.swift in Sources */,
 				E27831AB2B895F8A00819CB4 /* LoginVC.swift in Sources */,
+				475734C12BCA37D700FC0941 /* ProfileTVC.swift in Sources */,
+				475734C32BCA381200FC0941 /* ProfileTVCell.swift in Sources */,
 				E24BCCC62B9C28FF007A3AC1 /* LeaderBoardVC.swift in Sources */,
 				E223A84A2BCA33080043014E /* HeaderView.swift in Sources */,
 				E27831AD2B895FA400819CB4 /* SignUpVC.swift in Sources */,
