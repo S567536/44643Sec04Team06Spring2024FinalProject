@@ -850,12 +850,12 @@
         <!--QUIZ Topics-->
         <scene sceneID="FNZ-yz-yDY">
             <objects>
-                <viewController id="bE8-U8-jEm" sceneMemberID="viewController">
+                <viewController id="bE8-U8-jEm" customClass="QuizTopicsVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0LP-5O-lxn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7FD-YZ-ZqV">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7FD-YZ-ZqV" userLabel="BigContainer">
                                 <rect key="frame" x="16" y="103" width="361" height="617"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJg-v9-BSf">
@@ -910,7 +910,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="QUIZ Topics" largeTitleDisplayMode="always" id="THH-Mv-FAQ"/>
                     <connections>
-                        <segue destination="mnZ-fD-1lm" kind="show" id="5Qf-m0-4dC"/>
+                        <outlet property="topicsTV" destination="Zf2-vL-Ume" id="xRU-0T-4lX"/>
+                        <segue destination="mnZ-fD-1lm" kind="show" identifier="quiz" id="5Qf-m0-4dC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEJ-Eg-DfS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1211,7 +1212,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ppj-rl-euh"/>
+        <segue reference="5Qf-m0-4dC"/>
         <segue reference="sNS-Pg-mHd"/>
         <segue reference="ryK-wi-FYV"/>
     </inferredMetricsTieBreakers>
