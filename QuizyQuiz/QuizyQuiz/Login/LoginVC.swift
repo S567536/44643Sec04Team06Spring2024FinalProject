@@ -22,6 +22,10 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.view.subviews.first?.frame = self.view.bounds
+    }
     
     @IBAction func LoginBTN(_ sender: UIButton) {
         AudioServicesPlaySystemSound(1001)
