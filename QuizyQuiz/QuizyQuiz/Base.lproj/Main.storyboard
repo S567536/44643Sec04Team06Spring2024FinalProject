@@ -948,31 +948,49 @@
                                                 <rect key="frame" x="16" y="112.66666666666667" width="361" height="34.333333333333329"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <action selector="answer:" destination="mnZ-fD-1lm" eventType="touchUpInside" id="nIa-Cs-d6u"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhh-5b-l28">
                                                 <rect key="frame" x="16" y="163" width="361" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <action selector="answer:" destination="mnZ-fD-1lm" eventType="touchUpInside" id="FrP-nU-wk0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h08-yI-9Wd">
                                                 <rect key="frame" x="16" y="213.33333333333334" width="361" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <action selector="answer:" destination="mnZ-fD-1lm" eventType="touchUpInside" id="x1c-Nz-LhJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbt-eU-pCg">
                                                 <rect key="frame" x="16" y="263.66666666666669" width="361" height="34.333333333333314"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <action selector="answer:" destination="mnZ-fD-1lm" eventType="touchUpInside" id="hyp-14-zqq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plm-cb-Pni">
                                                 <rect key="frame" x="16" y="314" width="361" height="34.333333333333314"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <action selector="answer:" destination="mnZ-fD-1lm" eventType="touchUpInside" id="erc-Rb-WYE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ttb-NV-i5E">
                                                 <rect key="frame" x="16" y="364.33333333333331" width="361" height="34.333333333333314"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <action selector="answer:" destination="mnZ-fD-1lm" eventType="touchUpInside" id="dIK-LU-YX2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -1004,6 +1022,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Quiz" id="3up-bD-5x1"/>
+                    <connections>
+                        <outlet property="option1BTN" destination="CFS-8L-H5M" id="9aX-e3-j6Z"/>
+                        <outlet property="option2LBL" destination="xhh-5b-l28" id="BFP-Vl-1QB"/>
+                        <outlet property="option3LBL" destination="h08-yI-9Wd" id="TKe-OP-m2V"/>
+                        <outlet property="option4LBL" destination="Hbt-eU-pCg" id="92n-kC-4qq"/>
+                        <outlet property="option5LBL" destination="plm-cb-Pni" id="OJU-jd-3Zx"/>
+                        <outlet property="option6LBL" destination="Ttb-NV-i5E" id="p0C-8f-f2a"/>
+                        <outlet property="questionLBL" destination="Qu8-dj-bDR" id="C9E-2x-nr3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fra-8t-wip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
