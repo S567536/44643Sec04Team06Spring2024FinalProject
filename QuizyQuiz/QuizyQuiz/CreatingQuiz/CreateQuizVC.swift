@@ -42,6 +42,12 @@ class CreateQuizVC: UIViewController {
             self.topics = res
             self.setTopicPopupButton()
         }
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+                backgroundImage.image = UIImage(named: "quiz4")
+                backgroundImage.contentMode = .scaleAspectFill // or .scaleAspectFit, depending on your preference
+                backgroundImage.clipsToBounds = true // Ensure the image doesn't extend beyond the view's bounds
+                self.view.addSubview(backgroundImage)
+                self.view.sendSubviewToBack(backgroundImage)
 
         // Do any additional setup after loading the view.
     }

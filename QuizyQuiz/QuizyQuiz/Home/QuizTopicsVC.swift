@@ -19,6 +19,12 @@ class QuizTopicsVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+                backgroundImage.image = UIImage(named: "quiz2")
+                backgroundImage.contentMode = .scaleAspectFill // or .scaleAspectFit, depending on your preference
+                backgroundImage.clipsToBounds = true // Ensure the image doesn't extend beyond the view's bounds
+                self.view.addSubview(backgroundImage)
+                self.view.sendSubviewToBack(backgroundImage)
         
         self.topicsTV.delegate = self
         self.topicsTV.dataSource = self
