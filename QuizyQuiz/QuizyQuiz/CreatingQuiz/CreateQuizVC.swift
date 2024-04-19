@@ -34,6 +34,7 @@ class CreateQuizVC: UIViewController {
     
     var topic = ""
     var level = ""
+    var count = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()

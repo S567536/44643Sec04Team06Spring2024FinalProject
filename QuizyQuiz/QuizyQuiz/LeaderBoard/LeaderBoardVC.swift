@@ -76,19 +76,19 @@ class LeaderBoardVC: UIViewController {
         dispatchGroup.enter()
         
         //self.showProgress()
-//        FireStoreOperations.getTopScorers { resp in
-//            
-//            self.top5 = resp ?? []
-//            dispatchGroup.leave()
-//        }
-//        
-//        dispatchGroup.enter()
-//        
-//        FireStoreOperations.getUserScorePosition { res in
-//            
-//            self.myPosition = res
-//            dispatchGroup.leave()
-//        }
+       FireStoreOperations.getTopScorers { resp in
+            
+            self.top5 = resp ?? []
+            dispatchGroup.leave()
+        }
+        
+        dispatchGroup.enter()
+        
+        FireStoreOperations.getUserScorePosition { res in
+            
+            self.myPosition = res
+            dispatchGroup.leave()
+        }
         
         
         

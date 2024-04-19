@@ -101,7 +101,7 @@ class MakingQUiz: UIViewController{
         if questions?.count ?? 0 < questions_count {
             
             let remaining = questions_count - (questions?.count ?? 0)
-            self.showAlert(str: "\(remaining) questions remaining to save this level")
+            self.showAlert(str: "\(remaining-1) questions remaining to save this level")
         }else {
             
             let id = Auth.auth().currentUser?.uid ?? ""

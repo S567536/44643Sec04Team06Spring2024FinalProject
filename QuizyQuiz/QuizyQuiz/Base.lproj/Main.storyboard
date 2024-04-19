@@ -69,11 +69,11 @@
                             <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-at-FRD" userLabel="LaunchLAV" customClass="LottieAnimationView" customModule="Lottie">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m1y-Wi-DTH" secondAttribute="bottom" constant="30" id="dW3-nN-wAQ"/>
                             <constraint firstItem="m1y-Wi-DTH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="hjN-0i-lLc"/>
@@ -329,6 +329,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="CoU-nO-gzO"/>
                                                 </constraints>
+                                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cells" editingAccessoryType="disclosureIndicator" id="tt7-7T-m4f">
                                                         <rect key="frame" x="0.0" y="50" width="361" height="43.666667938232422"/>
@@ -374,6 +375,7 @@
                     <navigationItem key="navigationItem" id="sPy-ud-N7d"/>
                     <connections>
                         <outlet property="levelLBL" destination="nH1-6s-0eB" id="nxa-rY-u02"/>
+                        <outlet property="questLBL" destination="5jU-gH-sQx" id="wB8-xd-saK"/>
                         <outlet property="recentLBL" destination="hMs-xH-138" id="cwc-5z-GAp"/>
                         <outlet property="recentQuizLBL" destination="bBV-gO-byw" id="RlB-p2-xs9"/>
                         <outlet property="recentView" destination="fOg-J1-Ovz" id="ceY-az-x7E"/>

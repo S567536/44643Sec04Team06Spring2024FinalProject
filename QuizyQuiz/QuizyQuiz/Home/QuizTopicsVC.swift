@@ -20,7 +20,7 @@ class QuizTopicsVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-                backgroundImage.image = UIImage(named: "quiz2")
+                backgroundImage.image = UIImage(named: "quiz4")
                 backgroundImage.contentMode = .scaleAspectFill // or .scaleAspectFit, depending on your preference
                 backgroundImage.clipsToBounds = true // Ensure the image doesn't extend beyond the view's bounds
                 self.view.addSubview(backgroundImage)
@@ -54,6 +54,7 @@ class QuizTopicsVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         let topics = topics[indexPath.row]
         cell.textLabel?.text = topics.name ?? ""
         
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
     
@@ -63,13 +64,13 @@ class QuizTopicsVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
     
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "quiz"{
-//            
-//            let vc = segue.destination as! QuizVC
-//            //vc.topics = selectedTopics?.name ?? "Linux"
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "quiz"{
+            
+            let vc = segue.destination as! QuizVC
+            vc.topics = selectedTopics?.name ?? "Linux"
+       }
+    }
 
     /*
     // MARK: - Navigation

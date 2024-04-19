@@ -7,6 +7,7 @@
 
 import UIKit
 import AnimatedGradientView
+import FirebaseAuth
 
 class HomePageVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -29,12 +30,14 @@ class HomePageVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var topicsTV: UITableView!
     
     
+    @IBOutlet weak var questLBL: UILabel!
     var topics: [SubjectModel] = []
     var selectedTopic = ""
     var selectedLevel = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        questLBL.text = "Hi, \(Auth.auth().currentUser?.displayName ?? "")"
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
                 backgroundImage.image = UIImage(named: "quiz4")
                 backgroundImage.contentMode = .scaleAspectFill // or .scaleAspectFit, depending on your preference
@@ -52,6 +55,62 @@ class HomePageVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
         }
     }
+    
+    func setUserScore() -> Void {
+        
+        FireStoreOperations.fetchUserScore { resp in
+            
+            if resp == nil {
+                
+                FireStoreOperations.createScoreInfo { _, _ in
+                    
+                    self.setUserScore()
+                }
+            }
+        }
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.tabBarController?.tabBar.isHidden = false
+        
+        
+        let recent = UserDefaults.standard.value(forKey: "recentQuiz") as? [String:Any] ?? nil
+        if recent == nil {
+            
+            recentLBL.isHidden = true
+            recentView.isHidden = true
+            
+        }else {
+            
+            recentLBL.isHidden = false
+            recentView.isHidden = false
+            
+            selectedTopic = recent?["subject"] as? String ?? "Linux"
+            selectedLevel = recent?["level"] as? String ?? "Easy"
+            
+            recentQuizLBL.text = selectedTopic
+            levelLBL.text = selectedLevel
+            
+            
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+            recentView.addGestureRecognizer(tapGesture)
+
+        }
+        
+    }
+    
+    
+    // Handler method to respond to the tap gesture
+        @objc func handleTap(_ gesture: UITapGestureRecognizer) {
+            
+            self.performSegue(withIdentifier: "quiz", sender: self)
+            
+            // You can add your desired actions here
+        }
+    
     
     
     //        title = "Hello"
@@ -102,7 +161,7 @@ class HomePageVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "quiz"{
-            let vc = segue.destination as! QuizVC
+            _ = segue.destination as! QuizVC
         }
     }
     

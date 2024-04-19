@@ -51,6 +51,7 @@ class QuizVC: UIViewController {
                 self.view.sendSubviewToBack(backgroundImage)
         
         let recent = ["topics": topics , "level" : "Easy"]
+        UserDefaults.standard.setValue(recent, forKey: "recentQuiz")
         
         scoreLBL.title = "Score : \(score)"
         self.hideAll()
@@ -153,7 +154,10 @@ class QuizVC: UIViewController {
         }
         
         scoreLBL.title = "Score: \(score)"
-        
+//        FireStoreOperations.updateMyScore { _, _ in
+//            
+//        }
+//        
         if index < questions.count - 1{
             index += 1
             self.setQuestion()
