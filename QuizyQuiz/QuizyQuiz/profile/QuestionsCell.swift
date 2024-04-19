@@ -1,13 +1,13 @@
 //
-//  ProfileTVCell.swift
+//  QuestionsCell.swift
 //  QuizyQuiz
 //
-//  Created by manikanta on 4/12/24.
+//  Created by Rishik Reddy Endurthy on 4/19/24.
 //
 
 import UIKit
 
-class ProfileTVCell: UITableViewCell {
+class QuestionsCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
