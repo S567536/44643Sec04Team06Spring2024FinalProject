@@ -31,6 +31,7 @@ class QuizVC: UIViewController {
     @IBOutlet weak var option6LBL: UIButton!
     
     
+    @IBOutlet weak var scoreLBL: UIBarButtonItem!
     
     var topics = ""
     var questions: [QuizModel] = []
@@ -45,8 +46,20 @@ class QuizVC: UIViewController {
         
         let recent = ["topics": topics , "level" : "Easy"]
         
+        scoreLBL.title = "Score : \(score)"
+        self.hideAll()
         getQuiz(level: "easy")
         // Do any additional setup after loading the view.
+    }
+    
+    func hideAll() -> Void{
+        questionLBL.isHidden = true
+        option1BTN.isHidden = true
+        option2LBL.isHidden = true
+        option3LBL.isHidden = true
+        option4LBL.isHidden = true
+        option5LBL.isHidden = true
+        option6LBL.isHidden = true
     }
     
     
@@ -133,6 +146,7 @@ class QuizVC: UIViewController {
             myScore += 10
         }
         
+        scoreLBL.title = "Score: \(score)"
         
         if index < questions.count - 1{
             index += 1
