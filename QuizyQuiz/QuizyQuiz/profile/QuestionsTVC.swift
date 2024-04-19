@@ -9,37 +9,73 @@ import UIKit
 
 class QuestionsTVC: UITableViewController {
 
+    
+
+    var topic = ""
+    var level = ""
+    
+    var questions: [[String:Any]] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.questions.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "questionCell", for: indexPath) as! QuestionsCell
+        
+        let question = self.questions[indexPath.row]
+        cell.questionLBL.text = question["question"] as? String ?? ""
+        
+        let option1 = question["option1"] as? String ?? ""
+        let option2 = question["option2"] as? String ?? ""
+        let option3 = question["option3"] as? String ?? ""
+        let option4 = question["option4"] as? String ?? ""
+        
+        cell.option1LBL.text = option1
+        cell.option2LBL.text = option2
+        cell.option3LBL.text = option3
+        cell.option4LBL.text = option4
+        
+        
+        let correct = question["correct"] as? String ?? ""
+        cell.imgView1.image = UIImage(named: "UnCheckMark")
+        cell.imgView2.image = UIImage(named: "UnCheckMark")
+        cell.imgView3.image = UIImage(named: "UnCheckMark")
+        cell.imgView4.image = UIImage(named: "UnCheckMark")
+        
+        if correct == option1 {
+            
+            cell.imgView1.image = UIImage(named: "CheckCircle")
+        }else if correct == option2 {
+            
+            cell.imgView2.image = UIImage(named: "CheckCircle")
+        }else if correct == option3 {
+            
+            cell.imgView3.image = UIImage(named: "CheckCircle")
+        }else if correct == option4 {
+            
+            cell.imgView4.image = UIImage(named: "CheckCircle")
+        }
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -57,7 +93,7 @@ class QuestionsTVC: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 

@@ -9,6 +9,33 @@ import UIKit
 
 class QuestionsCell: UITableViewCell {
 
+
+    @IBOutlet weak var questionLBL: UILabel!
+    
+    
+    @IBOutlet weak var option1LBL: UILabel!
+    
+    
+    @IBOutlet weak var imgView1: UIImageView!
+    
+    
+    @IBOutlet weak var imgView2: UIImageView!
+    
+    
+    @IBOutlet weak var option2LBL: UILabel!
+    
+    
+    @IBOutlet weak var imgView3: UIImageView!
+    
+    
+    @IBOutlet weak var option3LBL: UILabel!
+    
+    
+    @IBOutlet weak var imgView4: UIImageView!
+    
+    
+    @IBOutlet weak var option4LBL: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

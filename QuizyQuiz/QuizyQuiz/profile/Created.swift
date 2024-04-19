@@ -117,6 +117,12 @@ class Created: UIViewController {
         }
     }
     
+    
+    @IBAction func next(_ sender: Any) {
+        self.performSegue(withIdentifier: "quizez", sender: self)
+    }
+
+    
 
     /*
     // MARK: - Navigation
