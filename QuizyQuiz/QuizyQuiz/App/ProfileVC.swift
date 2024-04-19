@@ -76,6 +76,28 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            self.performSegue(withIdentifier: "profileToSettingsSegue", sender: self)
+            self.performSegue(withIdentifier:"profileToNotificationsSegue", sender: self)
+            self.performSegue(withIdentifier:"profileToQuizhistorySegue", sender: self)
+            self.performSegue(withIdentifier:"profileToCreatedquizzesSegue", sender: self)
+            
+        }
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if(segue.identifier == "profileToSettingsSegue"){
+                guard segue.destination is SettingsVC else {return}
+            if(segue.identifier == "profileToNotificationsSegue"){
+                guard segue.destination is NotificationsVC else {return}
+            if(segue.identifier == "profileToQuizhistorySegue"){
+                guard segue.destination is NotificationsVC else {return}
+            if(segue.identifier == "profileToCreatedquizzesSegue"){
+                guard segue.destination is NotificationsVC else {return}
+                        }
+                    }
+                }
+                
+                
+            }
+        }
 
 }

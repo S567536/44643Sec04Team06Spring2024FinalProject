@@ -1167,11 +1167,31 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="HdC-GQ-Apf" id="UJa-jI-O1X"/>
+                        <segue destination="L4p-hM-Dyc" kind="show" identifier="profileToSettingsSegue" id="VOd-v3-aOn"/>
+                        <segue destination="LMS-B6-MAa" kind="show" identifier="profileToNotificationsSegue" id="Wok-ji-ek1"/>
+                        <segue destination="WJU-dG-3Fc" kind="show" identifier="profileToQuizhistorySegue" id="250-ct-A0O"/>
+                        <segue destination="McL-ih-tFP" kind="show" identifier="profileToCreatedquizzesSegue" id="m0G-ye-tgB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jjl-CO-Xey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6270.9923664122134" y="933.80281690140851"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="KUK-i7-DjP">
+            <objects>
+                <viewController id="L4p-hM-Dyc" customClass="SettingsVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZNV-fg-8GE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uHy-d2-g82"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="3WA-e0-RiE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w17-v3-ua4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6972" y="476"/>
         </scene>
         <!--Item-->
         <scene sceneID="gGS-uk-ztY">
@@ -1245,6 +1265,54 @@
                 </view>
             </objects>
             <point key="canvasLocation" x="9164.1221374045799" y="292.95774647887328"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="e5y-bm-T9Z">
+            <objects>
+                <viewController id="LMS-B6-MAa" customClass="NotificationsVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3VD-SH-eAU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DKz-r4-sWy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notifications" id="Mt9-3h-EEO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVw-Wk-3Zv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7726" y="796"/>
+        </scene>
+        <!--Quiz History-->
+        <scene sceneID="rf3-Ls-cdJ">
+            <objects>
+                <viewController id="WJU-dG-3Fc" customClass="quizHistoryVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eHD-cE-ukW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Mud-fS-LVc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quiz History" id="uGS-nR-kRB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bko-Id-aEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7726" y="1542"/>
+        </scene>
+        <!--Created Quizzes-->
+        <scene sceneID="h5R-q9-Qqn">
+            <objects>
+                <viewController id="McL-ih-tFP" customClass="createdQuizzesVC" customModule="QuizyQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kwa-f5-L7s">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Jdl-ET-qdX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Created Quizzes" id="sUX-dD-zpU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oE1-mR-KQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6973" y="1672"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
