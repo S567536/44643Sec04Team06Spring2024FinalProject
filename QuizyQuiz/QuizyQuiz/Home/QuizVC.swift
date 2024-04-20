@@ -154,10 +154,9 @@ class QuizVC: UIViewController {
         }
         
         scoreLBL.title = "Score: \(score)"
-//        FireStoreOperations.updateMyScore { _, _ in
-//            
-//        }
-//        
+        FireStoreOperations.updateMyScore { _, _ in
+            
+        }
         if index < questions.count - 1{
             index += 1
             self.setQuestion()
@@ -170,6 +169,10 @@ class QuizVC: UIViewController {
     func showAlert(message:String){
         let alert = UIAlertController(title: "Level Completed", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {_ in
+                        // Perform your action here
+                        self.performSegue(withIdentifier: "quizToHome", sender: nil)
+                    
+
         }))
         present(alert, animated: true , completion:  nil)
     }

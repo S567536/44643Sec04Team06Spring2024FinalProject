@@ -18,6 +18,14 @@ class QuestionsTVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        FireStoreOperations.fetchMyCreatedQuiz(subject: topic, level: level) { res in
+            
+            self.navigationItem.title = res?["subject"] as? String ?? ""
+            self.questions = res?["questions"] as? [[String:Any]] ?? []
+            
+            self.tableView.reloadData()
+        }
+        
         
 
     }

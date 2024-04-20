@@ -57,7 +57,7 @@ class MakingQUiz: UIViewController{
         questionTV.textColor = .lightGray
         questionTV.delegate = self
         
-        saveBTN.isEnabled = true
+        saveBTN.isEnabled = false
     }
     
 
@@ -230,7 +230,12 @@ class MakingQUiz: UIViewController{
     func showAlert(str: String) -> Void {
         
         let alert = UIAlertController(title: "Error", message: str, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+                    // Perform your action here
+                    self.performSegue(withIdentifier: "quizToCreate", sender: nil)
+                }
+
+        alert.addAction(okAction )
         self.present(alert, animated: true, completion: nil)
     }
 }

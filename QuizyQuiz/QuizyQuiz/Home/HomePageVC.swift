@@ -54,6 +54,8 @@ class HomePageVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             self.topicsTV.reloadData()
             
         }
+        
+        self.setUserScore()
     }
     
     func setUserScore() -> Void {

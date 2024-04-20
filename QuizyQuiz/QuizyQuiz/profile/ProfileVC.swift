@@ -144,12 +144,6 @@ class ProfileVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
             
         }))
 
-        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { action in
-            
-            self.takeImageFromCamera()
-            
-            
-        }))
 
         self.present(actionSheet, animated: true)
     }
@@ -158,16 +152,6 @@ class ProfileVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         let pickerController = UIImagePickerController()
         pickerController.delegate = self
         self.present(pickerController, animated: true)
-    }
-
-    func takeImageFromCamera() {
-        let imagePicker = UIImagePickerController()
-        imagePicker.allowsEditing = true
-        imagePicker.delegate = self
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            imagePicker.sourceType = .camera
-        }
-        self.present(imagePicker, animated: true)
     }
     
     func uploadProfileImage(completion: @escaping () -> ()) {
