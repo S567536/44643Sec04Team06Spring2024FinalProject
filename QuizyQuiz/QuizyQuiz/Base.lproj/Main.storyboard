@@ -1946,6 +1946,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="03a-Gh-Bm2"/>
         <segue reference="5Qf-m0-4dC"/>
         <segue reference="pcs-dY-uba"/>
         <segue reference="OBS-XI-CB2"/>
