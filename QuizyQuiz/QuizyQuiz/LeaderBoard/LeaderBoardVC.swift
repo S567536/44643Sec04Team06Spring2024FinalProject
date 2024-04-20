@@ -18,6 +18,7 @@ class LeaderBoardVC: UIViewController {
     
     @IBOutlet weak var senView: UIView!
     
+    @IBOutlet weak var senIV: UIImageView!
     
     @IBOutlet weak var yourView: UIView!
     
@@ -75,7 +76,6 @@ class LeaderBoardVC: UIViewController {
         let dispatchGroup = DispatchGroup()
         dispatchGroup.enter()
         
-        //self.showProgress()
        FireStoreOperations.getTopScorers { resp in
             
             self.top5 = resp ?? []
@@ -115,8 +115,8 @@ class LeaderBoardVC: UIViewController {
         istIV.layer.cornerRadius = istIV.frame.size.height / 2
         istIV.clipsToBounds = true
         
-//        senIV.layer.cornerRadius = senIV.frame.size.height / 2
-//        senIV.clipsToBounds = true
+        senIV.layer.cornerRadius = senIV.frame.size.height / 2
+        senIV.clipsToBounds = true
         
         
         thiIV.layer.cornerRadius = thiIV.frame.size.height / 2

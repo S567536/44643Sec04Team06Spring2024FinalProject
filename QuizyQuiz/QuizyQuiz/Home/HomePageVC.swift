@@ -38,6 +38,7 @@ class HomePageVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         questLBL.text = "Hi, \(Auth.auth().currentUser?.displayName ?? "")"
+
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
                 backgroundImage.image = UIImage(named: "quiz4")
                 backgroundImage.contentMode = .scaleAspectFill // or .scaleAspectFit, depending on your preference

@@ -38,13 +38,10 @@ class Created: UIViewController {
                 self.view.addSubview(backgroundImage)
                 self.view.sendSubviewToBack(backgroundImage)
         
-//        self.tabBarController?.tabBar.isHidden = true
         
         self.setLevelPopupButton()
-        //self.showProgress()
         Constants.getSubjects { res in
             
-           // self.removeProgress()
             self.topics = res
             
             self.setSubjectPopupButton()

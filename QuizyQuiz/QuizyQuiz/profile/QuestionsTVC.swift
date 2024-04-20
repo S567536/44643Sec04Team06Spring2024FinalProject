@@ -19,9 +19,11 @@ class QuestionsTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         FireStoreOperations.fetchMyCreatedQuiz(subject: topic, level: level) { res in
-            
+            print(self.topic)
             self.navigationItem.title = res?["subject"] as? String ?? ""
+            print(self.navigationItem.title ?? 0)
             self.questions = res?["questions"] as? [[String:Any]] ?? []
+            print(self.questions)
             
             self.tableView.reloadData()
         }
@@ -45,7 +47,7 @@ class QuestionsTVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "questionCell", for: indexPath) as! QuestionsCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionsCell", for: indexPath) as! QuestionsCell
         
         let question = self.questions[indexPath.row]
         cell.questionLBL.text = question["question"] as? String ?? ""

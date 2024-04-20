@@ -167,7 +167,6 @@ class ProfileVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         
         let storageRef = Storage.storage().reference().child("\(name)")
         
-        //self.showProgress()
         storageRef.putData(imageData, metadata: nil) { (metadata, error) in
             if error != nil {
                 print("error")
@@ -210,7 +209,6 @@ extension ProfileVC : UINavigationControllerDelegate, UIImagePickerControllerDel
             
             self.uploadProfileImage {
                 
-                //self.removeProgress()
             }
         }
         

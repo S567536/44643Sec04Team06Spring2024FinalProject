@@ -108,7 +108,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uU4-08-YcG" userLabel="SignUpSV">
-                                        <rect key="frame" x="0.0" y="73.666666666666629" width="353" height="541.99999999999989"/>
+                                        <rect key="frame" x="0.0" y="73.666666666666629" width="353" height="542"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aXy-9D-RYW" userLabel="EmailSV">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="129.66666666666666"/>
@@ -1342,6 +1342,7 @@
                         <outlet property="istIV" destination="vQG-pj-HxB" id="odd-jo-bYt"/>
                         <outlet property="istView" destination="7Wn-4R-H03" id="sHF-MC-Nyl"/>
                         <outlet property="mypositionLBL" destination="QH0-kQ-Tux" id="ZPT-Gq-3Eg"/>
+                        <outlet property="senIV" destination="Opb-jo-Ua0" id="Yun-rl-7E2"/>
                         <outlet property="senView" destination="01A-tB-sPC" id="4yq-RY-AYR"/>
                         <outlet property="thiIV" destination="g4D-un-5QN" id="vND-Ov-9bi"/>
                         <outlet property="thiView" destination="0Mw-wB-83s" id="Xb5-8M-G78"/>
@@ -1695,7 +1696,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="questionCell" rowHeight="258" id="qaK-u7-f8e" customClass="QuestionsCell" customModule="QuizyQuiz" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionsCell" rowHeight="258" id="qaK-u7-f8e" customClass="QuestionsCell" customModule="QuizyQuiz" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="258"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qaK-u7-f8e" id="vyI-ud-JlG">
